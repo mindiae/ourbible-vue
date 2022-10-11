@@ -1,0 +1,20 @@
+import { createRouter, createWebHistory } from 'vue-router'
+
+import Bible from '../views/Bible'
+import Commentaries from '../views/Commentaries'
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes: [
+    {
+      path: '/bible',
+      component: Bible
+    },
+    {
+      path: '/commentaries',
+      component: Commentaries
+    }
+  ]
+})
+
+export default router
