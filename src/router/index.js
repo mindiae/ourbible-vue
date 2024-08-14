@@ -1,20 +1,25 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from "vue-router";
 
-import Bible from '../views/Bible.vue'
-import Commentaries from '../views/Commentaries.vue'
+import Bible from "../views/Bible.vue";
+import Commentaries from "../views/Commentaries.vue";
+import Books from "../views/Books.vue";
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: '/bible',
-      component: Bible
+      path: "/",
+      component: Bible,
     },
     {
-      path: '/commentaries',
-      component: Commentaries
-    }
-  ]
-})
+      path: "/commentaries",
+      component: Commentaries,
+    },
+    // {
+    //   path: '/books',
+    //   component: Books
+    // }
+  ],
+});
 
-export default router
+export default router;

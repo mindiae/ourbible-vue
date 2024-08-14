@@ -1,24 +1,24 @@
 <template>
+  <a href="/commentaries">commentaries</a>
   <books-browser :modules_obj="modules_object" default_module="OGB">
   </books-browser>
 </template>
 
 <script>
-import BooksBrowser from '../components/BooksBrowser.vue'
-import ModulesObj from '../data/bible/data.json'
+import BooksBrowser from "../components/BooksBrowser.vue";
+import ModulesObj from "../data/bible/data.json";
 
 export default {
   metaInfo: {
-    title: 'Bible'
+    title: "Bible",
   },
   components: {
-    BooksBrowser
+    BooksBrowser,
   },
   data() {
     return {
-      modules_object: ModulesObj
-    }
-  }
-}
+      modules_object: ModulesObj,
+    };
+  },
+};
 </script>
-
